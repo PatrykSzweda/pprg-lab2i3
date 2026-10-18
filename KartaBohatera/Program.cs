@@ -1,1 +1,14 @@
-﻿Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Zadanie 1");
+string imie = "V";
+char symbol = '#';
+int poziom = 7;
+int zloto = 52;
+double waga = 8.5;
+bool maMape = true;
+Console.WriteLine("=== EKWIPUNEK ===");
+Console.WriteLine($"Imię: {imie}");
+Console.WriteLine($"Symbol: {symbol}");
+Console.WriteLine($"Poziom: {poziom}");
+Console.WriteLine($"Złoto: {zloto}");
+Console.WriteLine($"Waga: {waga} kg");
+Console.WriteLine($"Ma mapę: {maMape}");
