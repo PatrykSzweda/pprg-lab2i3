@@ -1,23 +1,26 @@
-﻿Console.WriteLine("Zadanie 8");
+﻿Console.WriteLine("Zadanie 4");
 Console.WriteLine("Podaj punkty życia:");
 string health = Console.ReadLine();
 int healthPoints = int.Parse(health);
+Console.WriteLine("Podaj liczbę mikstur:");
+string potions = Console.ReadLine();
+int potionAmount = int.Parse(potions);
 Console.WriteLine("Czy ma klucz?");
-string key = Console.ReadLine();
-bool haveKey = bool.Parse(key);
-Console.WriteLine("Czy zna hasło?");
-string password = Console.ReadLine();
-bool havePassword = bool.Parse(password);
+string klucz = Console.ReadLine();
+bool maKlucz = bool.Parse(klucz);
+Console.WriteLine("Czy ma mapę?");
+string mapa = Console.ReadLine();
+bool maMape = bool.Parse(mapa);
+bool zyje = healthPoints > 0;
+bool maPelneZdrowie = healthPoints == 100;
+bool maZaopatrzenie = potionAmount > 0;
+bool maPrzedmiotNawigacyjny = maKlucz || maMape;
+bool gotowyDoWyprawy = zyje && maZaopatrzenie && maPrzedmiotNawigacyjny;
+bool wymagaLeczenia = !maPelneZdrowie;
 
-if (healthPoints <= 0)
-{
-    Console.WriteLine("Nie możesz wejść, ponieważ nie żyjesz");
-}
-else if (haveKey == true || havePassword == true)
-{
-    Console.WriteLine("Możesz wejść");
-}
-else
-{
-    Console.WriteLine("Nie możesz wejść, ponieważ nie masz sposobu otwarcia drzwi");
-}
+Console.WriteLine($"Żyje: {zyje}");
+Console.WriteLine($"Ma pełne zdrowie: {maPelneZdrowie}");
+Console.WriteLine($"Wymaga leczenia: {wymagaLeczenia}");
+Console.WriteLine($"Ma zaopatrzenie: {maZaopatrzenie}");
+Console.WriteLine($"Ma klucz lub mapę: {maPrzedmiotNawigacyjny}");
+Console.WriteLine($"Gotowy do wyprawy: {gotowyDoWyprawy}");
