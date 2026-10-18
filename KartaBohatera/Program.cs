@@ -1,10 +1,22 @@
-﻿Console.WriteLine("Zadanie 5");
-Console.WriteLine("Podaj liczbę całkowitą:");
-string number = Console.ReadLine();
-int numberEven = int.Parse(number);
-int rest = numberEven % 2;
-if (rest == 0)
+﻿Console.WriteLine("Zadanie 6");
+Console.WriteLine("Podaj kierunek (północ, południe, wschód albo zachód)");
+string direction = Console.ReadLine();
+switch (direction)
 {
-    Console.WriteLine("Liczba jest parzysta");
+    case "północ":
+        Console.WriteLine("Wyruszasz w stronę gór.");
+        break;
+    case "południe":
+        Console.WriteLine("Wyruszasz w stronę pustyni.");
+        break;
+    case "wschód":
+        Console.WriteLine("Wyruszasz w stronę lasu.");
+        break;
+    case "zachód":
+        Console.WriteLine("Wyruszasz w stronę morza.");
+        break;
+    default:
+        Console.WriteLine("Nieznany kierunek.");
+        break;
+
 }
-else Console.WriteLine("Liczba jest nieparzysta");
