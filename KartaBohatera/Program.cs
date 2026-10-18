@@ -1,25 +1,23 @@
-﻿Console.WriteLine("Zadanie 7");
-Console.WriteLine("Podaj wiek:");
-string age = Console.ReadLine();
-int ageUser = int.Parse(age);
+﻿Console.WriteLine("Zadanie 8");
+Console.WriteLine("Podaj punkty życia:");
+string health = Console.ReadLine();
+int healthPoints = int.Parse(health);
+Console.WriteLine("Czy ma klucz?");
+string key = Console.ReadLine();
+bool haveKey = bool.Parse(key);
+Console.WriteLine("Czy zna hasło?");
+string password = Console.ReadLine();
+bool havePassword = bool.Parse(password);
 
-if (ageUser < 0)
+if (healthPoints <= 0)
 {
-    Console.WriteLine("Niepoprawny wiek");
+    Console.WriteLine("Nie możesz wejść, ponieważ nie żyjesz");
 }
-else if (ageUser >= 0 && ageUser <= 12)
+else if (haveKey == true || havePassword == true)
 {
-    Console.WriteLine("Dziecko");
-}
-else if (ageUser >= 13 && ageUser <= 17)
-{
-    Console.WriteLine("Nastolatek");
-}
-else if (ageUser >= 18 && ageUser <= 64)
-{
-    Console.WriteLine("Osoba dorosła");
+    Console.WriteLine("Możesz wejść");
 }
 else
 {
-    Console.WriteLine("Senior");
+    Console.WriteLine("Nie możesz wejść, ponieważ nie masz sposobu otwarcia drzwi");
 }
