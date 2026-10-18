@@ -1,22 +1,25 @@
-﻿Console.WriteLine("Zadanie 6");
-Console.WriteLine("Podaj kierunek (północ, południe, wschód albo zachód)");
-string direction = Console.ReadLine();
-switch (direction)
-{
-    case "północ":
-        Console.WriteLine("Wyruszasz w stronę gór.");
-        break;
-    case "południe":
-        Console.WriteLine("Wyruszasz w stronę pustyni.");
-        break;
-    case "wschód":
-        Console.WriteLine("Wyruszasz w stronę lasu.");
-        break;
-    case "zachód":
-        Console.WriteLine("Wyruszasz w stronę morza.");
-        break;
-    default:
-        Console.WriteLine("Nieznany kierunek.");
-        break;
+﻿Console.WriteLine("Zadanie 7");
+Console.WriteLine("Podaj wiek:");
+string age = Console.ReadLine();
+int ageUser = int.Parse(age);
 
+if (ageUser < 0)
+{
+    Console.WriteLine("Niepoprawny wiek");
+}
+else if (ageUser >= 0 && ageUser <= 12)
+{
+    Console.WriteLine("Dziecko");
+}
+else if (ageUser >= 13 && ageUser <= 17)
+{
+    Console.WriteLine("Nastolatek");
+}
+else if (ageUser >= 18 && ageUser <= 64)
+{
+    Console.WriteLine("Osoba dorosła");
+}
+else
+{
+    Console.WriteLine("Senior");
 }
