@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KartaBohatera")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+050371f461623123b32955f80e1149678d72de84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6523b9eb3b2754f4189891d64e369bf8015a6dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("KartaBohatera")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KartaBohatera")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
